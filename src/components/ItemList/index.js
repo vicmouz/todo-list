@@ -57,7 +57,7 @@ export default function ItemList({ name, id, reload, status }) {
       <ContainerItem>
         <CheckBox onChange={()=> doneTODO(id, status)}/>
         {status === 1 ? (
-          <strike style={{textDecoration: "line-through"}}>{name}</strike>
+          <strike >{name}</strike>
         ) : (
           <p
             style={{ cursor: "pointer" }}
