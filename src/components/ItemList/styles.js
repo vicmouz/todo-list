@@ -10,6 +10,13 @@ export const ContainerItem = styled.div`
   width: 38rem;
 p{
   margin-left: 0.875rem;
+  cursor: ${props => (props.editable ? 'pointer' : 'none')};
+  width: 32.5rem;
+}
+strike {
+  margin-left: 0.875rem;
+  cursor: ${props => (props.editable ? 'pointer' : 'none')};
+  width: 32.5rem;
 }
   img {
     width: 1rem;

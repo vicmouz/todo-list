@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerInput = styled.div`
   background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.125rem;
   border-radius: 5px;
   width: 40.5rem;
   height: 2.625rem;

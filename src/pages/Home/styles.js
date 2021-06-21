@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerActivities = styled.div`
-margin-top: 1.125rem;
+
   background: #ffffff;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
