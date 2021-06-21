@@ -8,19 +8,16 @@ import { Container, ContainerActivities } from './styles';
 
 export default function Home({}) {
   const [activities, setActivities] = useState([
-    {id: 1,name: 'Aceitar desafio'},
-    {id: 2,name: 'Aceitar desafio'},
-    {id: 3,name: 'Aceitar desafio'},
-    {id: 4,name: 'Aceitar desafio'},
   ]);
 const getActivities = useCallback(async () => {
-  const {data} = await api.get('activities')
+  const {data} = await api.get('todos')
   setActivities(data)
+  console.log(data)
 }, [])
 
   useEffect(() => {
     getActivities();
-  })
+  },[getActivities])
   return (
     <Container>
       <LogoApp/>
@@ -30,7 +27,7 @@ const getActivities = useCallback(async () => {
         {activities.length > 0 ? (
           <>
           {activities.map((item) => 
-            <ItemList name={item.name} id={item.id}></ItemList>
+            <ItemList name={item.data.name} id={item.id}></ItemList>
           )}
           </>
         ) : (

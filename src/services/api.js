@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-   baseURL: 'http://192.168.0.100:3000/api/',
+   baseURL: 'https://api-todo-list-findup.herokuapp.com/api/v1/',
    timeout: 120000
 });
 
